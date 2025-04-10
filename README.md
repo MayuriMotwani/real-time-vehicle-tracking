@@ -21,7 +21,6 @@ real-time-vehicle-tracking/
 ├── images/                       # hardware setup or output screenshots
 ├── README.md
 ├── LICENSE
-└── .gitignore
 ```
 
 ---
@@ -49,6 +48,9 @@ Install the following libraries from the **Arduino Library Manager**:
 
 - [TinyGPS++](https://github.com/mikalhart/TinyGPSPlus)  
   > For parsing GPS data from NEO-6M module.
+
+- [Blynk Library](https://github.com/blynkkk/blynk-library)  
+  > Used to send real-time GPS data to the Blynk IoT platform via internet (WiFi).
 
 ---
 
@@ -80,18 +82,39 @@ cd real-time-vehicle-tracking
 - Watch live GPS data stream in real time
 
 ---
+## 📲 Blynk Integration
 
+This project uses the [Blynk IoT platform](https://blynk.io) to display live GPS data on your mobile device.
+
+### 🔧 Setup Steps:
+
+1. **Download Blynk App** (iOS or Android)
+2. **Create a new template/project**
+3. Add **two Value Display widgets** for:
+   - Latitude (V0)
+   - Longitude (V1)
+4. Copy your **Auth Token**
+5. In `gps_tracking_ESP32.ino`, replace the following:
+   ```cpp
+   char auth[] = "YourAuthToken";
+   char ssid[] = "YourWiFiSSID";
+   char pass[] = "YourWiFiPassword";
+   ```
+6. Upload and open Serial Monitor to verify connection.
+7. View live location data on Blynk!
+
+---
 ## 📸 Images
 
 ![Hardware Setup](images/hardware_setup.jpg)
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Features
 
-- Send GPS coordinates to a cloud server or Firebase  
-- Add SMS alerts using GSM module  
-- Show location on a mobile/web map using MQTT or HTTP  
+- ✅ Real-time GPS data transmission to Blynk mobile dashboard
+- 🌍 View live coordinates on your smartphone
+- 🔔 Trigger events or location-based automation via Blynk
 
 ---
 
