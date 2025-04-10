@@ -38,11 +38,17 @@ real-time-vehicle-tracking/
 
 ## 🔧 Required Arduino Libraries
 
-Install these libraries from the **Arduino Library Manager**:
+Install the following libraries from the **Arduino Library Manager**:
 
-- [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)  
-- [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
-- [TinyGPS++](https://github.com/mikalhart/TinyGPSPlus)
+- [ESP32 by Espressif Systems](https://github.com/espressif/arduino-esp32)  
+  > Board package for ESP32 microcontrollers. Add it via **Board Manager** using the URL:  
+  > `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
+
+- [ESP8266 and ESP32 OLED driver for SSD1306 displays](https://github.com/ThingPulse/esp8266-oled-ssd1306)  
+  > Lightweight library to control 0.96" OLED displays with I2C interface.
+
+- [TinyGPS++](https://github.com/mikalhart/TinyGPSPlus)  
+  > For parsing GPS data from NEO-6M module.
 
 ---
 
