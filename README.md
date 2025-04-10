@@ -6,7 +6,23 @@ A compact Arduino-based system that tracks a vehicle's real-time GPS location us
 
 ## 📦 Project Structure
 
-real-time-vehicle-tracking/ │ ├── oled_display_test/ # Code for testing OLED display │ └── L11-SourceCodeTestingtheOLEDdisplay.ino │ ├── board_testing/ # Code to verify ESP32 board functionality │ └── board_testing.ino │ ├── gps_tracking/ # Main GPS tracking logic │ └── gps_tracking_ESP32.ino │ ├── images/ # Add hardware setup or output screenshots ├── README.md ├── LICENSE └── .gitignore
+```
+real-time-vehicle-tracking/
+│
+├── oled_display_test/            # Code for testing OLED display
+│   └── L11-SourceCodeTestingtheOLEDdisplay.ino
+│
+├── board_testing/                # Code to verify ESP32 board functionality
+│   └── board_testing.ino
+│
+├── gps_tracking/                 # Main GPS tracking logic
+│   └── gps_tracking_ESP32.ino
+│
+├── images/                       # Add hardware setup or output screenshots
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 ---
 
@@ -32,44 +48,49 @@ Install these libraries from the **Arduino Library Manager**:
 
 ## 🛠️ Getting Started
 
-### 1. Clone the Repository
+### 🔹 Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/MayuriMotwani/real-time-vehicle-tracking.git
 cd real-time-vehicle-tracking
-2. Open .ino Files
-Use the Arduino IDE and open one of the following:
+```
 
-For display testing: oled_display_test.ino
+### 🔹 Step 2: Open `.ino` Files in Arduino IDE
 
-For board checking: board_testing.ino
+- For OLED display test: `oled_display_test.ino`  
+- For ESP32 board check: `board_testing.ino`  
+- For full GPS tracking: `gps_tracking_ESP32.ino`
 
-For full GPS tracking: gps_tracking_ESP32.ino
+### 🔹 Step 3: Select Board & Port
 
-3. Select Board & Port
-Board: ESP32 Dev Module
+- **Board**: `ESP32 Dev Module`  
+- **Upload Speed**: `115200`  
+- **Port**: Select the one assigned by your OS
 
-Upload Speed: 115200
+### 🔹 Step 4: Upload & Monitor
 
-Port: As assigned by your OS
+- Upload the code to your ESP32  
+- Open **Serial Monitor** at `115200` baud  
+- Watch live GPS data stream in real time
 
-4. Upload & Monitor
-Upload the code to your ESP32 board
+---
 
-Open the Serial Monitor at 115200 baud
+## 🚀 Future Improvements
 
-Watch real-time GPS coordinates appear
+- Send GPS coordinates to a cloud server or Firebase  
+- Add SMS alerts using GSM module  
+- Show location on a mobile/web map using MQTT or HTTP  
 
-🚀 Future Improvements
-Send GPS coordinates to a cloud server or Firebase
+---
 
-Add SMS alerts using GSM
+## 👤 Author
 
-Display location on a mobile/web map using MQTT or HTTP
+**Mayuri Motwani**  
+🔗 [GitHub Profile](https://github.com/MayuriMotwani)
 
-👤 Author
-Mayuri Motwani
-🔗 GitHub
+---
 
-📄 License
-Licensed under the MIT License.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+```
