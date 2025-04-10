@@ -18,7 +18,7 @@ real-time-vehicle-tracking/
 ├── gps_tracking/                 # Main GPS tracking logic
 │   └── gps_tracking_ESP32.ino
 │
-├── images/                       # Add hardware setup or output screenshots
+├── images/                       # hardware setup or output screenshots
 ├── README.md
 ├── LICENSE
 └── .gitignore
