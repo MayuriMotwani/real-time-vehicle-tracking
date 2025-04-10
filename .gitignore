@@ -1,0 +1,38 @@
+# Arduino build files
+*.hex
+*.elf
+*.bin
+*.d
+*.dep
+*.eep
+*.lss
+*.map
+*.o
+*.a
+
+# Arduino IDE specific
+*.sketches
+*.cpp
+*.sdf
+*.pro.user
+*.pro.user.*
+*.DS_Store
+
+# PlatformIO (if used)
+.pio/
+.vscode/
+.idea/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
