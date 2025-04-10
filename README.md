@@ -31,7 +31,7 @@ real-time-vehicle-tracking/
 - ESP32 Dev Board  
 - GPS Module (e.g., NEO-6M)  
 - OLED Display (0.96" I2C, SSD1306)  
-- Breadboard and Jumper Wires  
+- Jumper Wires  
 - Optional: USB cable for power and Serial Monitor
 
 ---
@@ -72,6 +72,12 @@ cd real-time-vehicle-tracking
 - Upload the code to your ESP32  
 - Open **Serial Monitor** at `115200` baud  
 - Watch live GPS data stream in real time
+
+---
+
+## 📸 Images
+
+![Hardware Setup](images/hardware_setup.jpg)
 
 ---
 
