@@ -1,4 +1,3 @@
-# real-time-vehicle-tracking
 # 🚗 Real-Time Vehicle Tracking System using ESP32 and GPS
 
 A compact Arduino-based system that tracks a vehicle's real-time GPS location using an ESP32 board and displays coordinates on an OLED screen. This project can be expanded to send data to the cloud for live tracking.
@@ -8,10 +7,6 @@ A compact Arduino-based system that tracks a vehicle's real-time GPS location us
 ## 📦 Project Structure
 
 real-time-vehicle-tracking/ │ ├── oled_display_test/ # Code for testing OLED display │ └── L11-SourceCodeTestingtheOLEDdisplay.ino │ ├── board_testing/ # Code to verify ESP32 board functionality │ └── board_testing.ino │ ├── gps_tracking/ # Main GPS tracking logic │ └── gps_tracking_ESP32.ino │ ├── images/ # Add hardware setup or output screenshots ├── README.md ├── LICENSE └── .gitignore
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -64,9 +59,6 @@ Upload the code to your ESP32 board
 Open the Serial Monitor at 115200 baud
 
 Watch real-time GPS coordinates appear
-
-📸 Images
-Add hardware setup and screenshots in the /images folder.
 
 🚀 Future Improvements
 Send GPS coordinates to a cloud server or Firebase
